@@ -1,20 +1,14 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: rails4_action_controller_live_with_google_maps_sample_development
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
-  username: rails4_action_controller_live_with_google_maps_sample
-  password:
-  host: localhost
+  timeout: 5000
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: rails4_action_controller_live_with_google_maps_sample_test
+  adapter: sqlite3
+  database: db/test.sqlite3
   pool: 5
-  username: rails4_action_controller_live_with_google_maps_sample
-  password:
-  host: localhost
+  timeout: 5000
 
 production:
   adapter: postgresql
