@@ -1,0 +1,12 @@
+<%= javascript_tag do %>
+    $(function() {
+        if(window.EventSource) {
+            new Map("map");
+        } else {
+            $("#map").text("EventSource を利用できるブラウザでアクセスしてください。");
+        }
+    });
+<% end %>
+<div id="map">
+</div>
+

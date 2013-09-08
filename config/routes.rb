@@ -1,4 +1,8 @@
 Rails4ActionControllerLiveWithGoogleMapsSample::Application.routes.draw do
+
+  root 'index#index'
+  get :markers, to: 'index#markers'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
