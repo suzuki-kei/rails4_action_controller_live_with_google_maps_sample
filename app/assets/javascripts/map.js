@@ -2,7 +2,7 @@
 function Map(mapId, options) {
     this.mapId = mapId;
     this.options = $.extend({}, options, this.DEFAULT_OPTIONS);
-    this.markerMap = {}
+    this.markerMap = {};
     this.eventSource = null;
     this.map = this.createMap(this.mapId, this.options);
 }
