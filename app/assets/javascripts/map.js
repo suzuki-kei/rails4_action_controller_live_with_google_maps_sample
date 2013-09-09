@@ -68,6 +68,7 @@ Map.prototype = {
 
         this.eventSource.addEventListener("done", function(event) {
             self.eventSource.close();
+            self.eventSource = null;
         });
     },
 
